@@ -20,7 +20,7 @@ const passport      = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const flash = require("connect-flash");
 
-
+require("./config/passport-setup");
 
 
 
