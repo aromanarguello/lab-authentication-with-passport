@@ -14,7 +14,13 @@ router.get("/private-page", ensureLogin.ensureLoggedIn(), (req, res) => {
   res.render("passport/private", { user: req.user });
 });
 
+router.get("/signup", (req, res, next) => {
+  res.render("passport/signup");
+});
 
+router.post("/process-signup", (req, res, next) => {
+  res.render("/index");
+});
 
 
 
